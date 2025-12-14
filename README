@@ -1,0 +1,29 @@
+¿Cómo se aplica el flujo de datos unidireccional en este proyecto?
+En mi proyecto de EcoHuerta, el flujo de datos unidireccional se aplica siguiendo la lógica de React,
+donde la información siempre va desde los componentes padres hacia los hijos. Por ejemplo,
+el componente App envía datos como el título o la descripción a los componentes Header y Card. Esto asegura que el
+control del estado esté centralizado y que los datos fluyan en una sola dirección, evitando confusiones o comportamientos inesperados.
+
+¿Qué papel cumple el estado (useState) en los diferentes componentes y cómo influye en el renderizado? 
+El estado (useState) tiene un papel clave en los componentes interactivos, como Counter. Allí, React utiliza 
+el estado para almacenar y actualizar valores dinámicos (por ejemplo, el número del contador). Cada vez que el
+estado cambia, React vuelve a renderizar el componente afectado, actualizando solo la parte necesaria del DOM.
+Esto hace que la aplicación sea más eficiente y reactiva, sin tener que manipular el DOM manualmente.
+
+
+¿Por qué es importante separar la UI en componentes reutilizables y puros?
+Separar la UI en componentes reutilizables y puros es importante porque mejora la organización del código
+y facilita su mantenimiento. Cada componente tiene una única responsabilidad, el Header muestra la cabecera, 
+el Footer el pie de página, y así sucesivamente. los componentes puros son más fáciles de probar
+o reutilizar en otras partes del proyecto.
+
+¿Qué ventajas aporta el uso de JSX declarativo frente al enfoque imperativo del DOM tradicional?
+El uso de JSX declarativo aporta grandes ventajas frente al DOM imperativo tradicional. Con JSX, 
+describo qué quiero ver en la interfaz, y React se encarga de cómo hacerlo. En lugar de escribir pasos para crear,
+insertar o eliminar nodos del DOM, simplemente declaro la estructura visual con JSX, lo que hace el código más fácil de mantener.
+
+¿Cómo podrías mejorar la app agregando tres componentes nuevos sin romper la coherencia del diseño ni la lógica?
+Para mejorar la app sin romper su coherencia ni su lógica, agregué tres nuevos componentes:
+Hero: una sección principal que da la bienvenida al usuario y presenta el propósito del sitio.
+Footer: el pie de página que contiene los créditos y enlaces importantes.
+Tips: una lista de consejos sostenibles que refuerza el enfoque educativo del proyecto.
